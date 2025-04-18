@@ -1,0 +1,46 @@
+Desafio: Sistema de Gerenciamento de Coleção de Mídias
+
+Contexto:
+Você precisa criar um sistema para gerenciar uma coleção de mídias (livros, filmes, etc.). Cada item da coleção deve armazenar:
+
+    Título da mídia
+
+    Ano de publicação
+
+    Gênero
+
+Requisitos Técnicos:
+
+    Defina uma interface chamada Midia que exija:
+
+        GetTitulo() string
+
+        GetAnoPublicacao() int
+
+    Crie uma struct genérica ColecaoMidia[T Midia] que:
+
+        Armazene os itens da coleção ([]T).
+
+        Tenha um método AdicionarItem(item T) para adicionar itens à coleção.
+
+        Tenha um método ListarPorAno(ano int) []T que retorne todos os itens publicados em um ano específico.
+
+    Restrição de Genéricos:
+    Garanta que ColecaoMidia só aceite tipos que implementem a interface Midia.
+
+    Crie dois tipos concretos que implementem Midia, por exemplo:
+
+        Livro (com campos adicionais como Autor e Paginas).
+
+        Filme (com campos adicionais como Diretor e DuracaoMinutos).
+
+Teste o Funcionamento:
+
+    Instancie ColecaoMidia com um dos tipos concretos.
+
+    Adicione itens e verifique se o método ListarPorAno filtra corretamente.
+
+Dica:
+Use any ou interface{} para generalizar a struct genérica, mas restrinja com a interface Midia.
+
+Divirta-se! 📚🎥
